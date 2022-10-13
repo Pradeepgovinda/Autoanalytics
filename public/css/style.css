@@ -1,0 +1,21 @@
+.navbar {
+    background-color: #6A6A6A;
+}
+
+@media (min-width: 992px){
+.navbar navbar-expand-lg {
+    flex-direction: row;
+}
+}
+
+.nav-item {
+    padding-left: 3em;
+}
+
+.days{
+    padding-left: 5em; 
+}
+
+.nav-item .nav-link{
+    color: #FFFFFF;
+}
