@@ -1,0 +1,67 @@
+[
+    {
+        "id": 1,
+        "icon": "./images/smartcar.png",
+        "name":"1C4RJFAG6JC272412",
+        "model": "2018 Jeep Grand Cherokee",
+        "sell": "Liklihood to sell w/in 30 Days: 0.26",
+        "price":"Price: $20997 Cost: $18682.6"
+        
+    },
+    {
+        "id": 2,
+        "icon": "./images/smartcar.png",
+        "name":"1C6HJTAG1LL147081",
+        "model": "2018 Jeep Grand Cherokee",
+        "sell": "Liklihood to sell w/in 30 Days: 0.26",
+        "price":"Price: $20997 Cost: $18682.6"
+    },
+    {
+        "id": 3,
+        "icon": "./images/smartcar.png",
+        "name":"1C6HJTAG1LL147080",
+        "model": "2018 Jeep Grand Cherokee",
+        "sell": "Liklihood to sell w/in 30 Days: 0.26",
+        "price":"Price: $20997 Cost: $18682.6"
+    },
+    {
+        "id": 4,
+        "name":"1C6RR7LT1GS132542",
+        "icon": "./images/smartcar.png",
+        "model": "2018 Jeep Grand Cherokee",
+        "sell": "Liklihood to sell w/in 30 Days: 0.26",
+        "price":"Price: $20997 Cost: $18682.6"
+    },
+    {
+        "id": 5,
+        "icon": "./images/smartcar.png",
+        "name":"1C4RDJAG1HC681308",
+        "model": "2018 Jeep Grand Cherokee",
+        "sell": "Liklihood to sell w/in 30 Days: 0.26",
+        "price":"Price: $20997 Cost: $18682.6"
+    },
+    {
+        "id": 6,
+        "icon": "./images/smartcar.png",
+        "name":"1C4RJFAG6JC272411",
+        "model": "2018 Jeep Grand Cherokee",
+        "sell": "Liklihood to sell w/in 30 Days: 0.26",
+        "price":"Price: $20997 Cost: $18682.6"
+    },
+    {
+        "id": 7,
+        "icon": "./images/smartcar.png",
+        "name":"1C4BJWDG1DL667857",
+        "model": "2018 Jeep Grand Cherokee",
+        "sell": "Liklihood to sell w/in 30 Days: 0.26",
+        "price":"Price: $20997 Cost: $18682.6"
+    },
+    {
+        "id": 8,
+        "icon": "./images/smartcar.png",
+        "name":"1C4BJWFG8EL1070392",
+        "model": "2018 Jeep Grand Cherokee",
+        "sell": "Liklihood to sell w/in 30 Days: 0.26",
+        "price":"Price: $20997 Cost: $18682.6"
+    }
+]
