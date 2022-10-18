@@ -28,7 +28,7 @@ const Layout = () => {
               aria-expanded="true"
               aria-controls="collapseExample1"
             >
-              <i className="fas fa-tachometer-alt fa-fw me-3"></i><span>Filter Vehicles By Age</span>
+              <span>Filter Vehicles By Age</span>
             </a>
 
             <ul id="collapseExample1" className="collapse show list-group list-group-flush">
@@ -69,7 +69,7 @@ const Layout = () => {
       </nav>
 
 
-      <main>
+      <main className="sticky">
          <div className="container solid"> {/*pt-4 */}
           <div className="row Vehicles">
             <div className="col-md-4">
@@ -85,7 +85,7 @@ const Layout = () => {
               </div>
             </div>
             <div className="col-md-4">
-            <div className="row">
+            <div className="row average">
                 <div className="col">
                 <h1>210</h1>
                 <p>Vehicles In Inventory</p>
@@ -99,30 +99,36 @@ const Layout = () => {
             <div className="col-md-4">Stock</div>
           </div>
         </div>
+        <hr/>
       </main>
 
 
-<main>
-<div className="row justify-content-center ">
+<main className="bg1">
+{/* <div className="container justify-content-center ">
+  <div className="row jeep mt-5 mb-5">
+    <div className="cost">
+    <p>1C4RJFAG6JC272412, 2018 Jeep Grand Cherokee, Liklihood to sell w/in 30 Days: 0.26, Price: $20997 Cost: $18682.6</p>
+    </div>
+  </div> */}
 
 {stock.map((item) => (
-    <div className="col-sm-6 col-md-4 solid  item text-center mt-3" key={item.name}>
-        <div className="mb-5 jeep">
-            <div className="row">
-                <div className="col-sm-4 col-6">
-                <img src={item.icon}className="img-fluid" />
+    <div className="container item text-center mt-3" key={item.name}>
+        <div className="row jeep mt-5 mb-5">
+            <div className="row cost">
+                <div className="col-6  img">
+                <img src={item.icon} className="img-fluid" />
                 </div>
-                <div className="col-sm-8 col-6 ">
-                <p> {item.name}{item.model}{item.sell}{item.price}  </p>
-            
-               
+                <div className="col center">
+                <p><span className="h1">{item.name} </span>
+                  <span className="h2">{item.model} {item.code} </span> 
+                  <span className="h3">{item.sell} {item.price}  </span></p>
                 </div>
             </div>
         </div>
 
     </div>
 ))}
-</div>
+{/* </div> */}
       </main>
       <Outlet />
     </>
