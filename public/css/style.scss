@@ -1,0 +1,212 @@
+#root {
+  background: #f7f7f7;
+}
+
+body {
+  background-color: #6A6A6A;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Helvetica Neue, Bold";
+  src: url(../fonts/HelveticaNeue-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Helvetica Neue, Medium";
+  src: url(../fonts/HelveticaNeue-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Helvetica Neue, Condensed";
+  src: url(../fonts/HelveticaNeue-Condensed.ttf);
+}
+
+@media (min-width: 991.98px) {
+  main {
+    padding-left: 240px;
+  }
+}
+
+
+
+.sidebar {
+
+  /* Sidebar */
+
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  padding: 58px 0 0;
+
+  /* Height of navbar */
+  
+  width: 240px;
+  z-index: 600;
+
+  /* Navbar edit */
+
+  background-color: #6A6A6A;
+  padding-top: inherit;
+  color: #fbfbfb;
+  font-family: 'Helvetica Neue, Bold';
+  font-size: 13px;
+
+}
+
+.sidebar a:hover {
+  color: red;
+}
+
+@media (max-width: 991.98px) {
+  .sidebar {
+    width: 100%;
+  }
+}
+
+
+.sidebar .navbar-brand {
+  padding-left: 2.8em;
+}
+
+.sidebar .navbar-brand img {
+  width: 8em;
+}
+
+#mainNavbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: none;
+}
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background: rgb(255, 254, 254);
+
+}
+
+
+.vehicles .online-vehicle {
+  font-family: 'Helvetica Neue, Bold';
+  text-align: center;
+  padding-top: 40px;
+  padding-right: 20px;
+}
+
+.vehicles .online-vehicle .vehicle-one{
+  margin: 0;
+}
+
+.vehicles .online-vehicle .percent {
+  color: #00c851;
+  font-size: .5em;
+  position: fixed;
+  padding-top: 3px;
+  padding-left: 3px;
+}
+
+.vehicles .online-vehicle .mom {
+  color: #00c851;
+  font-size: .5em;
+  position: fixed;
+  padding-top: 11px;
+  padding-left: 3px;
+}
+
+
+.vehicles .online-vehicle .stock{
+  font-family: 'Helvetica Neue, Bold';
+  text-align: initial;
+  padding-left: 25px;
+}
+
+.vehicles .online-vehicle .stock-one {
+  margin: 0;
+  
+}
+
+.vehicles .vehicle-inventory {
+  color: #777777;
+}
+
+
+
+.vehicle-details {
+  background: #F7F7F7;
+}
+
+.vehicle-details .vehicle-list {
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  border: 2px solid rgb(238, 237, 237);
+  background: white;
+}
+
+.vehicle-details .vehicle-image {
+  width: auto;
+}
+
+.vehicle-details .vehicle-list  .item-name {
+  font-family: 'Helvetica Neue, Medium';
+  font-size: 1.1em;
+  color: #000000CC;
+}
+
+.vehicle-details .vehicle-list .item-model {
+  font-family: 'Helvetica Neue, Regular';
+  font-size: 1em;
+  color: #00000099;
+}
+
+.vehicle-details .vehicle-list  .item-sell {
+  font-family: 'Helvetica Neue, Bold';
+  font-size: .8em;
+  color: #00000059;
+}
+
+.vehicle-details .vehicle-list  .item-price {
+  font-family: 'Helvetica Neue, Condensed';
+  font-size: .7em;
+  color: #00000059;
+}
+
+.vehicle-details .vehicle-list .items {
+  align-self: center;
+}
+
+
+
+
+/* .bg1 .item .vehicle-list{
+  padding-left: 3em;
+  padding-right: 3em;
+} */
+
+/* .ridge {
+  border-style: ridge;
+} */
+
+.vehicle-list {
+
+  /* padding-left: 50px;
+  padding-right: 50px; */
+  text-align: left;
+  padding: 1.6em;
+}
+
+/* .solid .Vehicles .number{
+    color: black;
+} */
