@@ -2,8 +2,9 @@ import React from 'react';
 import { Routes, Route} from "react-router-dom";
 import './App.css';
 import "bootstrap/dist/css/bootstrap.min.css";
+import Home from './pages/home';
 import Navbar from './pages/navbar';
-// import Main from './pages/main';
+import Vehicle from './pages/vehicle';
 
 
 
@@ -15,7 +16,8 @@ function App() {
     <div>
       <Routes>
       <Route path="/" element={<Navbar />}>
-      {/* <Route index element={<Main />} /> */}
+      <Route index element={<Home />} />
+      <Route path="21-day-vehicles" element={<Vehicle />} />
       </Route>
       </Routes>
 
