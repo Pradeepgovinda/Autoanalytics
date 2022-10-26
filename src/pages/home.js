@@ -57,12 +57,12 @@ function Home() {
 
                   <div className="row">
                   <div className="col">
-                  <span className="item-name">Name:{item.name} </span>
-                      <span className="item-model"><br/>Model: {item.model}<br/> {item.code} </span>
+                  <span className="item-name">Vin: {item.name} </span>
+                      <span className="item-model"><br/>Name: {item.model}<br/>Stock: {item.code} </span>
                   </div>
                   <div className="col">
-                  <span className="item-sell">{item.sell}<br/>  </span>
-                      <span className="item-price">{item.price}</span>
+                  <span className="item-sell">Days: {item.sell}<br/>  </span>
+                      <span className="item-price">Price: {item.price}</span>
                   </div>
                 </div>
                   </div>
