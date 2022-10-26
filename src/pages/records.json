@@ -18,7 +18,8 @@
         "model": "2018 Jeep Grand Cherokee",
         "code": "132542T",
         "sell": "Liklihood to sell w/in 30 Days: 0.26",
-        "price":"Price: $20997 Cost: $18682.6"
+        "price":"Price: $20997 Cost: $18682.6",
+        "age":30    
     },
     {
         "id": 3,

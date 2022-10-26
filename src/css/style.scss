@@ -16,20 +16,23 @@
   
   @font-face {
     font-family: "Helvetica Neue, Bold";
-    src: url(../public/fonts/HelveticaNeue-Bold.ttf);
+    src: url(../fonts/HelveticaNeue-Bold.ttf);
   }
   
   @font-face {
     font-family: "Helvetica Neue, Medium";
-    src: url(../public/fonts/HelveticaNeue-Medium.ttf);
+    src: url(../fonts/HelveticaNeue-Medium.ttf);
   }
   
   @font-face {
     font-family: "Helvetica Neue, Condensed";
-    src: url(../public/fonts/HelveticaNeue-Condensed.ttf);
+    src: url(../fonts/HelveticaNeue-Condensed.ttf);
   }
+
+
+
   
-  @media (min-width: 991.98px) {
+  @media (min-width: 992px) {
     main {
       padding-left: 240px;
     }
@@ -59,25 +62,88 @@
     color: #fbfbfb;
     font-family: 'Helvetica Neue, Bold';
     font-size: 13px;
+
+
+
+    ul .list-group-item .text-reset:hover{
+        text-decoration: underline;
+        text-decoration-color: #d84e45;
+        // -moz-text-decoration-color: rgb(250, 114, 64);
+        text-decoration-thickness: 2px;
+      }
+    // ul .list-group-item {
+    //     display: inline-block;
+    //     position: relative;
+    //     color: #0087ca;
+    //   }
+      
+    //   ul .list-group-item:after {
+    //     content: '';
+    //     position: absolute;
+    //     width: 100%;
+    //     transform: scaleX(0);
+    //     height: 2px;
+    //     bottom: 0;
+    //     left: 0;
+    //     background-color: #0087ca;
+    //     transform-origin: bottom right;
+    //     transition: transform 0.25s ease-out;
+    //   }
+      
+    //   ul .list-group-item:hover:after {
+    //     transform: scaleX(1);
+    //     transform-origin: bottom left;
+    //   }
+
     a:hover {
         color: #d84e45;
       }
   
   }
   
+//   .circle{
   
-  
-  @media (max-width: 991.98px) {
+//   border-radius: 50%;
+//         width: 34px;
+//         height: 34px;
+//         padding: 10px;
+//         background: #fff;
+//         border: 3px solid #000;
+//         color: #000;
+//         text-align: center;
+//         font: 32px Arial, sans-serif;
+//       }
+
+
+
+
+
+
+
+  @media (max-width: 992px) {
     .sidebar {
       width: 100%;
     }
   }
   
+  @media only screen and (max-width: 900px) {
+    #sidebarMenu .navbar-brand img {
+      padding-left: 70px;
+    }
+  }
+
+  @media only screen and (max-width: 900px) {
+    #sidebarMenu .position-sticky li {
+      padding-left: 30px;
+    }
+  }
+
   
   .sidebar .navbar-brand {
     padding-left: 2.8em;
     img {
-        width: 8em;
+        // padding-left: 70px;
+    width: 60%;
       }
   }
   

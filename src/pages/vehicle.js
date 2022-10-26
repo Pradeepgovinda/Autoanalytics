@@ -33,6 +33,15 @@ function Vehicle() {
                 <input type="text" placeholder="Search" />
               </div>
             </div>
+            <div className="col-md-4">
+                <div className="row vehicle-inventory">
+                  <div className="col">
+                    <h1 className="circle">A</h1>
+                    
+                  </div>
+                  
+                </div>
+              </div>
           </div>
           <hr />
         </main>
@@ -40,7 +49,7 @@ function Vehicle() {
   
         <main className="vehicle-details">
           {stock.map((item) => (
-            <div className="container item text-center mt-3" key={item.name}>
+            <div className="container item text-center mt-3" key={item.age}>
               <div className="container vehicle-list">
                 <div className="row">
                   <div className="col-4  vehicle-image">

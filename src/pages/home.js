@@ -54,10 +54,17 @@ function Home() {
                     <img src={item.icon} title={item.title} alt= {item.title} className="img-fluid" />
                   </div>
                   <div className="col items">
-                    <p><span className="item-name">{item.name} </span>
-                      <span className="item-model">{item.model} {item.code} </span>
-                      <span className="item-sell">{item.sell}  </span>
-                      <span className="item-price">{item.price}</span></p>
+
+                  <div className="row">
+                  <div className="col">
+                  <span className="item-name">Name:{item.name} </span>
+                      <span className="item-model"><br/>Model: {item.model}<br/> {item.code} </span>
+                  </div>
+                  <div className="col">
+                  <span className="item-sell">{item.sell}<br/>  </span>
+                      <span className="item-price">{item.price}</span>
+                  </div>
+                </div>
                   </div>
                 </div>
               </div>
