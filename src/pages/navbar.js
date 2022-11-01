@@ -30,7 +30,7 @@ const Layout = () => {
                 <a href="60-day-vehicles" className="text-reset">60 Day Vehicles</a>
               </li>
               <li className="list-group-item py-1">
-                <a href="100+_day-vehicles" className="text-reset">100+ Day Vehicles</a>
+                <a href="100-day-vehicles" className="text-reset">100+ Day Vehicles</a>
               </li>
             </ul>
               <li className="list-group-item py-1">

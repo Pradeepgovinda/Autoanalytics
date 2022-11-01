@@ -2,12 +2,11 @@ import React from "react";
 import { useState } from "react";
 import Records from './records.json';
 
-function Vehicle() {
-    const [stock] = useState(Records);
-    
-    
-    return (
-      <>
+function Forty() {
+  const [stock] = useState(Records);
+
+  return (
+    <>
       <main className="sticky">
         <div className="container vehicles"> {/*pt-3 */}
           <div className="row">
@@ -16,7 +15,7 @@ function Vehicle() {
             <div className="col-sm-3">
               <div className="row">
                 <div className="col">
-                  <h1 className="vehicle-one">11</h1>
+                  <h1 className="vehicle-one">5</h1>
                   <p>Vehicles Analyzed </p>
                 </div>
 
@@ -25,7 +24,7 @@ function Vehicle() {
             <div className="col-sm-4">
               <div className="row vehicle-inventory">
                 <div className="col">
-                  <h1 className="vehicle-one">21.00</h1>
+                  <h1 className="vehicle-one">40.00</h1>
                   <p>Average Age</p>
                 </div>
 
@@ -46,7 +45,7 @@ function Vehicle() {
                 <p>Avg. Performance:</p>
                 <div className="row vehicle-inventory">
                   <div className="col">
-                    <h1 className="circle">A+</h1>
+                    <h1 className="b-circle">B</h1>
 
                   </div>
 
@@ -89,8 +88,7 @@ function Vehicle() {
         </main>
     </>
 
-        
-    )
-  };
-  
-  export default Vehicle;
+  )
+};
+
+export default Forty;
