@@ -59,7 +59,6 @@ function Vehicle() {
         <hr />
       </main>
 
-
       <main className="vehicle-details">
           {stock.map((item) => (
             <div className="container item text-center mt-3" key={item.name}>
