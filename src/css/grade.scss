@@ -1,0 +1,33 @@
+
+  .copy-area {
+    display: flex;
+    align-items: center;
+  }
+  
+  button {
+    letter-spacing: 1px;
+    padding: 0.3rem;
+  }
+  
+  .copy-feedback {
+    margin-left: 1rem;
+    visibility: hidden;
+    .active {
+        visibility: visible;
+      }
+  }
+  
+  
+  
+  @media screen and (max-width: 600px) {
+    .container,
+    .copy-area {
+      flex-direction: column;
+    }
+  
+    .copy-feedback {
+      display: block;
+      margin-top: 0.5rem;
+    }
+  }
+  

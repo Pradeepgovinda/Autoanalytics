@@ -5,6 +5,16 @@ import Records from './records.json';
 function Forty() {
   const [stock] = useState(Records);
 
+var product = stock
+var startDate = "22";
+var endDate = "40";
+var resultProductData = product.filter(
+    function (a)
+    {
+        return (a.age) > startDate && (a.age) < endDate;
+    });
+console.log(resultProductData);
+
   return (
     <>
       <main className="sticky">
@@ -60,7 +70,7 @@ function Forty() {
 
 
       <main className="vehicle-details">
-          {stock.map((item) => (
+          {resultProductData.map((item) => (
             <div className="container item text-center mt-3" key={item.name}>
               <div className="container vehicle-list">
                 <div className="row">

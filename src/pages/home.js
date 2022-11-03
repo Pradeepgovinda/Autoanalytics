@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+// import { Link } from "react-router-dom";
 import Records from './records.json';
 
 function Home() {
@@ -44,25 +45,25 @@ function Home() {
           <hr />
         </main>
   
-  
+        {/* <Link to="/performance-grade"> */}
         <main className="vehicle-details">
-          {stock.map((item) => (
-            <div className="container item text-center mt-3" key={item.name}>
+          {stock.data.map((item) => (
+            <div className="container item text-center mt-3" key={item.stock}>
               <div className="container vehicle-list">
                 <div className="row">
                   <div className="col-4  vehicle-image">
-                    <img src={item.icon} title={item.title} alt= {item.title} className="img-fluid" />
+                    {/* <img src={item.vin} title={item.saves} alt= {item.vehicle} className="img-fluid" /> */}
                   </div>
                   <div className="col items">
 
                   <div className="row">
                   <div className="col">
-                  <span className="item-name">Vin: {item.name} </span>
-                      <span className="item-model"><br/>Name: {item.model}<br/>Stock: {item.code} </span>
+                  <span className="item-name">Vin: {item.vin} </span>
+                      <span className="item-model"><br/>Vehicle: {item.vehicle}<br/>Stock: {item.stock} </span>
                   </div>
                   <div className="col">
-                  <span className="item-sell">Days: {item.sell}<br/>  </span>
-                      <span className="item-price">Price: {item.price}</span>
+                  <span className="item-sell">Age: {item.age}<br/>  </span>
+                  <span className="item-price">Price: {item.price} Cost: {item.cost}</span>
                   </div>
                 </div>
                   </div>
@@ -72,6 +73,7 @@ function Home() {
             </div>
           ))}
         </main>
+        {/* </Link> */}
         </> 
         
     )

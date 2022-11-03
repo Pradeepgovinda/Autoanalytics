@@ -3,7 +3,7 @@ import { useEffect } from "react";
 
 function Prediction() {
 useEffect(() => {
-  fetch('https://www.postman.com/collections/d1cf5eefa2ed8a930449')
+  fetch('https://powerbi.approcket.in/api/v1/report')
   .then(res => res.json())
   .then(res => console.log(res)
   )

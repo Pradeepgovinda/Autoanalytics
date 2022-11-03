@@ -4,6 +4,16 @@ import Records from './records.json';
 
 function Vehicle() {
     const [stock] = useState(Records);
+
+var product = stock
+var startDate = "1";
+var endDate = "21";
+var resultProductData = product.filter(
+    function (a)
+    {
+        return (a.age) > startDate && (a.age) < endDate;
+    });
+console.log(resultProductData);
     
     
     return (
@@ -60,7 +70,7 @@ function Vehicle() {
       </main>
 
       <main className="vehicle-details">
-          {stock.map((item) => (
+          {resultProductData.map((item) => (
             <div className="container item text-center mt-3" key={item.name}>
               <div className="container vehicle-list">
                 <div className="row">
