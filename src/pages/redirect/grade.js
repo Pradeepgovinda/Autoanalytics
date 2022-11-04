@@ -8,25 +8,23 @@ function Grade() {
     const [stock] = useState(Records);
 
     var product = stock
-    var startDate = "1";
-    var endDate = "14";
-    var resultProductData = product.filter(
+    // var startDate = "0";
+    var endDate = "1";
+    var resultProductData = product.data.filter(
         function (a) {
-            return (a.age) > startDate && (a.age) < endDate;
+            return  (a.age) < endDate;
         });
-    console.log(resultProductData);
+    // console.log(resultProductData);
 
 
-    // const [text, setText] = useState("");
     const [isCopied, setIsCopied] = useState(false);
-
     const onCopyText = () => {
         setIsCopied(true);
         setTimeout(() => {
             setIsCopied(false);
         }, 1000);
     };
-    
+
 
     return (
         <>
@@ -85,22 +83,22 @@ function Grade() {
 
             <main className="vehicle-details">
                 {resultProductData.map((item) => (
-                    <div className="container item text-center mt-3" key={item.name}>
+                    <div className="container item text-center mt-3" key={item.stock}>
                         <div className="container vehicle-list">
                             <div className="row">
                                 <div className="col-4  vehicle-image">
-                                    <img src={item.icon} title={item.title} alt={item.title} className="img-fluid" />
+                                    {/* <img src={item.vin} title={item.saves} alt= {item.vehicle} className="img-fluid" /> */}
                                 </div>
                                 <div className="col items">
 
                                     <div className="row">
                                         <div className="col">
-                                            <span className="item-name">Vin: {item.name} </span>
-                                            <span className="item-model"><br />Name: {item.model}<br />Stock: {item.code} </span>
+                                            <span className="item-name">Vin: {item.vin} </span>
+                                            <span className="item-model"><br />Vehicle: {item.vehicle}<br />Stock: {item.stock} </span>
                                         </div>
                                         <div className="col">
-                                            <span className="item-sell">Days: {item.sell}<br />  </span>
-                                            <span className="item-price">Price: {item.price}</span>
+                                            <span className="item-sell">Age: {item.age}<br />  </span>
+                                            <span className="item-price">Price: {item.price} Cost: {item.cost}</span>
                                         </div>
                                     </div>
                                 </div>
@@ -109,10 +107,9 @@ function Grade() {
 
                     </div>
                 ))}
-               
+
                 <div className="container">
-                    
-                    <CopyToClipboard text={resultProductData?.toString.name} onCopy={onCopyText}>
+                    <CopyToClipboard text={resultProductData[0].vin} onCopy={onCopyText}>
                         <div className="copy-area">
                             <div>Copy to Clipboard</div>
                             <span className={`copy-feedback ${isCopied ? "active" : ""}`}>
@@ -121,11 +118,6 @@ function Grade() {
                         </div>
                     </CopyToClipboard>
                 </div>
-
-
-
-
-
 
             </main>
         </>
