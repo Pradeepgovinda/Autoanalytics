@@ -39,12 +39,10 @@ function Home() {
 
 
     
-  // const handleClick = (event) => {
-  //   // 👇️ refers to the div element
-  //   console.log(event);
-
-  //   console.log('div clicked');
-  // };
+  const handleClick = (event) => {
+    // 👇️ refers to the div element
+    console.log(event, 'div clicked');
+  };
 
 
   // let navigate = useNavigate(); 
@@ -104,13 +102,12 @@ function Home() {
       
       <main className="vehicle-details">
         {data.map((item) => (
-          <div className="container item text-center mt-3">
-            <div className="container vehicle-list" key={item.vin}
+          <div className="container item text-center mt-3" key={item.vin}>
+            <div className="container vehicle-list" 
             onClick={(e) => {
               setId(data.vin);
             }}>
-              <div className="row"  >
-              {/* onClick={event => handleClick(item)} */}
+              <div className="row" onClick={event => handleClick(item)}>
                 <div className="col-4  vehicle-image">
                   {/* <img src={item.vin} title={item.saves} alt= {item.vehicle} className="img-fluid" /> */}
                 </div>
