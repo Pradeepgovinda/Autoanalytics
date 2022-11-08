@@ -23,7 +23,7 @@ function App() {
       {/* <Route path="/auth" element={<Auth />} /> */}
       <Route path="/" element={<Navbar />}>
       <Route index element={<Home />} />
-      <Route path="/performance-grade" element={<Grade />} />
+      <Route exact path="/vehicle/:id" element={<Grade />} /> 
       <Route path="21-day-vehicles" element={<Vehicle />} />
       <Route path="40-day-vehicles" element={<Forty />} />
       <Route path="60-day-vehicles" element={<Sixty />} />
@@ -36,7 +36,6 @@ function App() {
   );
 }
 export default App;
-
 
 
 

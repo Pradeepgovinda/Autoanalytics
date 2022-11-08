@@ -1,12 +1,22 @@
 import React from "react";
+import { useParams } from "react-router";
+import { useEffect } from "react";
 import { useState } from "react";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import Records from "../records.json"
 
 
 function Grade() {
-    const [stock] = useState(Records);
+  
+    const { id } = useParams();
+  
+    useEffect(() => {
+      console.log({ id });
+    }, [id]);
+  
+    
 
+    const [stock] = useState(Records);
     var product = stock
     // var startDate = "0";
     var endDate = "1";
