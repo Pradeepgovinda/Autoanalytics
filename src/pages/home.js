@@ -115,7 +115,7 @@ function Home() {
 
                   <div data-id={item.id} className="row">
                     <div className="col">
-                    <Link to="/vehicle/:id" onClick={handleProceed}>
+                    <Link to={`/vehicle/${item.vin}`} onClick={handleProceed}>
                       <span className="item-name">Vin: {item.vin} </span></Link>
                       <span className="item-model"><br />Vehicle: {item.vehicle}<br />Stock: {item.stock} </span>
                     </div>
