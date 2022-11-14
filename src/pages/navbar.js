@@ -15,7 +15,7 @@ const Layout = () => {
               <img src="./images/smartcarLogo.png" alt="Smartcar" />
             </a>
             <li className="list-group-item py-1">
-              <a className="nav-link" aria-current="page" href="/">Home</a>
+              <a className="nav-link" aria-current="page" href="/home">Home</a>
             </li>
             <li> Filter Vehicles By Age </li>
 
