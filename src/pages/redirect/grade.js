@@ -65,9 +65,6 @@ function Grade() {
                                     <p className="stock-one">Stock</p>
                                     <input type="text" placeholder="Search" />
                                 </div>
-
-
-
                             </div>
 
                         </div>

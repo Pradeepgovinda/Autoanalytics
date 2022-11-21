@@ -2,7 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
-import {generatePath} from "react-router-dom";
+import { generatePath } from "react-router-dom";
 function Vehicle() {
   const [data, setData] = useState([]);
 
@@ -27,15 +27,14 @@ function Vehicle() {
   }, []);
 
 
-var product = data
-var startDate = "0";
-var endDate = "20";
-var resultProductData = product.filter(
-    function (a)
-    {
-        return (a.age) > startDate && (a.age) < endDate;
+  var product = data
+  var startDate = "0";
+  var endDate = "20";
+  var resultProductData = product.filter(
+    function (a) {
+      return (a.age) > startDate && (a.age) < endDate;
     });
-console.log(resultProductData);
+  console.log(resultProductData);
 
 
 
@@ -46,42 +45,36 @@ console.log(resultProductData);
     id && history.push(generatePath("/vehicle/:id", { id }));
   };
 
-    
-    
-    return (
-      <>
+
+
+  return (
+    <>
       <main className="sticky">
         <div className="container vehicles"> {/*pt-3 */}
           <div className="row">
             <div className="col-7">
-            <div className="row online-vehicle">
-            <div className="col-sm-3">
-              <div className="row">
-                <div className="col">
-                  <h1 className="vehicle-one">11</h1>
-                  <p>Vehicles Analyzed </p>
+              <div className="row online-vehicle">
+                <div className="col-sm-3">
+                  <div className="row">
+                    <div className="col">
+                      <h1 className="vehicle-one">11</h1>
+                      <p>Vehicles Analyzed </p>
+                    </div>
+                  </div>
                 </div>
-
-              </div>
-            </div>
-            <div className="col-sm-4">
-              <div className="row vehicle-inventory">
-                <div className="col">
-                  <h1 className="vehicle-one">21.00</h1>
-                  <p>Average Age</p>
+                <div className="col-sm-4">
+                  <div className="row vehicle-inventory">
+                    <div className="col">
+                      <h1 className="vehicle-one">21.00</h1>
+                      <p>Average Age</p>
+                    </div>
+                  </div>
                 </div>
-
+                <div className="stock col">
+                  <p className="stock-one">Stock</p>
+                  <input type="text" placeholder="Search" />
+                </div>
               </div>
-            </div>
-            <div className="stock col">
-              <p className="stock-one">Stock</p>
-              <input type="text" placeholder="Search" />
-            </div>
-
-
-
-          </div>
-
             </div>
             <div className="col">
               <div className="col circle-avg">
@@ -89,14 +82,11 @@ console.log(resultProductData);
                 <div className="row vehicle-inventory">
                   <div className="col">
                     <h1 className="circle">A+</h1>
-
                   </div>
-
                 </div>
               </div>
             </div>
           </div>
-          
         </div>
         <hr />
       </main>
@@ -104,12 +94,12 @@ console.log(resultProductData);
       <main className="vehicle-details">
         {resultProductData.map((item) => (
           <div className="container item text-center mt-3" key={item.vin}>
-            <div className="container vehicle-list" 
-            onClick={(e) => {
-              setId(data.vin);
-            }}>
+            <div className="container vehicle-list"
+              onClick={(e) => {
+                setId(data.vin);
+              }}>
               <div className="row">
-              {/* onClick={event => handleClick(item)} */}
+                {/* onClick={event => handleClick(item)} */}
                 <div className="col-4  vehicle-image">
                   {/* <img src={item.vin} title={item.saves} alt= {item.vehicle} className="img-fluid" /> */}
                 </div>
@@ -117,8 +107,8 @@ console.log(resultProductData);
 
                   <div data-id={item.id} className="row">
                     <div className="col">
-                    <Link to={`/vehicle/${item.vin}`} onClick={handleProceed}>
-                      <span className="item-name">Vin: {item.vin} </span></Link>
+                      <Link to={`/vehicle/${item.vin}`} onClick={handleProceed}>
+                        <span className="item-name">Vin: {item.vin} </span></Link>
                       <span className="item-model"><br />Vehicle: {item.vehicle}<br />Stock: {item.stock} </span>
                     </div>
                     <div className="col">
@@ -129,14 +119,12 @@ console.log(resultProductData);
                 </div>
               </div>
             </div>
-
           </div>
         ))}
       </main>
     </>
 
-        
-    )
-  };
-  
-  export default Vehicle;
+  )
+};
+
+export default Vehicle;

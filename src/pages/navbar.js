@@ -1,10 +1,7 @@
 import { Outlet } from "react-router-dom";
 import React from 'react';
 
-
-
 const Layout = () => {
-  
   
   return (
     <>
@@ -47,9 +44,7 @@ const Layout = () => {
       </nav>
 
       <nav id="mainNavbar" className="navbar navbar-expand-lg ">
-  
           <div className="container-fluid">
-  
             <button
               className="navbar-toggler"
               type="button"
@@ -64,7 +59,6 @@ const Layout = () => {
   
           </div>
         </nav>
-
       
       <Outlet />
     </>

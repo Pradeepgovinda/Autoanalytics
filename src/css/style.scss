@@ -15,10 +15,14 @@
   box-sizing: border-box;
 }
 
+// @import url("./log.scss");
+@import url("./login.scss");
+@import url("./signin.scss");
 @import url("./day21.scss");
 @import url("./forty.scss");
 @import url("./sixty.scss");
 @import url("./grade.scss");
+
 
 
 @font-face {
