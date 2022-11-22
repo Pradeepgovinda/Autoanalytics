@@ -10,7 +10,6 @@ function Signup () {
     setAuthMode(authMode === "signin" ? "signup" : "signin")
   }
 
-    const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [navigate, setNavigate] = useState(false);
@@ -19,7 +18,7 @@ function Signup () {
         e.preventDefault();
 
         await axios.post('register', {
-            name, email, password
+           email, password
         });
 
         setNavigate(true);
@@ -39,15 +38,7 @@ function Signup () {
               <a href="signin">Sign In</a>
             </span>
           </div>
-          <div className="form-group mt-3">
-            
-            <input
-              type="fullName"
-              className="mt-1"
-              placeholder=" Enter Your Name"
-              onChange={e => setName(e.target.value)}
-            />
-          </div>
+          
           <div className="form-group mt-3">
             
             <input
@@ -71,8 +62,10 @@ function Signup () {
               Submit
             </button>
           </div>
-          
         </div>
+        <div>
+          <img src="../images/smartcarLogo.png" title="autoanalytics" alt="autoanalytics" className="img-fluid" />
+          </div>
       </div>
     </div>
   )
